@@ -1,0 +1,22 @@
+[package]
+name = "rag-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+crossbeam = "0.8.4"
+curl = "0.4.44"
+indicatif = "0.17.7"
+serde = "1.0.189"
+serde_json = "1.0.107"
+tokio = { version = "1.35.1", features = ["full"] }
+tracing = "0.1"
+tracing-flame = "0.2.0"
+tracing-subscriber = "0.3"
+uuid = { version = "1.7.0", features=["v4", "fast-rng"] }
+qdrant-client = "1.6.0"
+reqwest = "0.11.22"
+io-uring = "0.6.2"
